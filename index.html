@@ -1,0 +1,195 @@
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body >
+  <div class="totalNav">
+
+    <nav class="navbar navbar-expand-lg sidenav navbar-dark bg-transparnt ">
+
+  
+      <div class="collapse sidenav navbar-collapse" id="navbarSupportedContent  ">
+        <ul class="navbar-nav  flex-column px-1 py-5">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Now playing <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item item1">
+            <a class="nav-link" href="#">Popular</a>
+          </li>
+          
+            <li class="nav-item item2">
+              <a class="nav-link" href="#">Top Rated</a>
+            </li>
+            <li class="nav-item item3">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item item4">
+              <a class="nav-link" href="#">Upcoming</a>
+            </li>
+            <li class="nav-item item5 ">
+              <a class="nav-link" href="#contactUs" id="contact">Contact Us</a>
+            </li>
+          
+        </ul>
+        
+      </div>
+      <div class="share">
+        <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      </div>
+        <p class=" w-70 text-white   ">Copyright Â© 2019 All Rights Reserved.</p>
+      
+    </nav>
+
+    <div class="bar p-1   ">
+      <img src="images/logo.png " class="w-75  ml-2">
+      
+      
+      
+      <i class="fas fa-align-justify"></i>
+      
+      <div class="icons d-flex flex-column ">
+      <i class="fas fa-share-alt p-2"></i>
+      <i class="fas fa-globe p-2"></i>
+      
+      
+      </div>
+      
+      
+      
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+ 
+
+    <div class="container mt-5  text-center ">
+        <div class="row  ">
+            <div class="col-md-6 ">
+        <form action="">
+        <input type="text" class="form-control" placeholder="get movies by word ..." id="sWord" onkeyup="searchByWord(this.value)" >
+        
+          </div>
+          <div class="col-md-6 ">
+            <form action="">
+           
+            <input type="search"  class="form-control" placeholder="search" id="searchlitter" onkeyup="search(this.value)" >
+           </form>
+              </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="containr py-3  text-center d-flex align-items-center justify-content-center  D">
+        <div class="row " id="myRow">
+           
+            
+            
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container py-5 " id="contactUs">
+        <h3 class="font-weight-bolder text-white mb-5">ContacUs...</h3>
+        <div class="row ">
+            <div class="col-md-6  mb-3">
+        <form class="fom">
+        <input type="text" class="form-control" placeholder="Enter your Name" id="validName" onkeyup="validateName()">
+        <p class=" alertName alertBox">Your Name is not valid</p>
+        
+          </div>
+          <div class="col-md-6 mb-3 ">
+            <form action="">
+           
+            <input type="email"  class="form-control" placeholder="Enter your Email" id="userMail" onkeyup="validateMail()"  >
+            <p class="alertMail ">entre valid email</p>
+           </form>
+              </div>
+              <div class="col-md-6 mb-3 ">
+                <form action="">
+               
+                <input type="number"  class="form-control" placeholder="Enter your Phone" id="phone" onkeyup="validatePhone()" >
+                <p class="alertPhone  alertBox  ">entre valid phone</p>
+               </form>
+                  </div>
+                  <div class="col-md-6  mb-3">
+                    <form action="">
+                   
+                    <input type="number"  class="form-control" placeholder="Enter your Age" id="age" onkeyup="validateAge()"  >
+                    <p class="alertAge alertBox ">entre valid age</p>
+                   </form>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <form action="">
+                       
+                        <input type="password"  class="form-control" placeholder="Enter your Password" id="password" onkeyup="validatePass()" >
+                        <p class=checkpass>entre valid password *Minimum eight characters, at least one letter and one number:*</p>
+                        <p class="alertPass  alertBox">entre valid password</p>
+                       </form>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <form action="">
+                           
+                            <input type="password"  class="form-control" placeholder="Enter your Repassword" id="rePassword" onkeyup="validateRepass()">
+                            <p class="alertRe alertBox ">entre valid Repassword</p>
+                           </form>
+                              </div>
+        </div>
+
+        <button class="btn btn-danger"  >Submit</button>
+
+    </div>
+
+    <i class="fas fa-times"></i>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+
+    
+
+
+
+</body>
+
+</html>
